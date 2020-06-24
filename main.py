@@ -70,7 +70,8 @@ if __name__ == "__main__":
         datapoints.append(l)
 
     c = Kmeans(datapoints)
-    c.predict(15, 150000)
+
+    c.predict(15, 150000)   #First param is number of cluster, second is the long enough distance between centroids
 
     centroids = c.getCentroids()
     listCoordinates = []
