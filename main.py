@@ -5,7 +5,6 @@ from matplotlib import cm
 class Kmeans:
     __centroids = dict()    #Dictionary of centroid and points belong to it with the form (centroid, list of points)
     __previousCentroids = list()    #List of the previous centroid
-    __k = 2    #Number of cluster
     def __init__(self, listDataPoint):
         self.dataPoints = listDataPoint
 
